@@ -1,29 +1,95 @@
 :root {
-  /* colors */
-  --color-white : hsl(0, 100%, 100%);
-  --color-black : hsl(0, 0%, 0%);
-  --color-grey-500: hsl(219, 13%, 44%);
-  --color-grey-50: hsl(220, 38%, 97%);
-  --color-blue-950: hsl(214, 24%, 23%);
-  --color-blue-900: hsl(216, 25%, 25%);
-  --color-blue-850: hsl(215, 27%, 32%);
-  --color-blue-500: hsl(223, 100%, 59%);
-  --color-blue-300: hsl(216, 47%, 78%);
-  --color-blue-100: hsl(220, 50%, 95%);
-  --color-blue-50: hsl(225, 100%, 96%);
-  --color-green-500: hsl(151, 68%, 52%);
-  --color-green-100: hsl(151, 88%, 94%);
-  --color-purple-600: hsl(277, 91%, 56%);
-  --color-purple-100: hsl(278, 100%, 95%);
-  --color-orange-400: hsl(22, 100%, 60%);
-  --color-orange-50: hsl(27, 100%, 96%);
-  --color-red-500: hsl(0, 82%, 63%);
 
-  /* font family */
-  --font-family-rubik : "Rubik", sans-serif;
+  /* ─────────────────────────────────────────────────
+     COLORS
+  ───────────────────────────────────────────────── */
 
-  /* typography */
-  
+  /* Base */
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+
+  /* Grey */
+  --color-grey-500: hsl(219, 13%, 44%); 
+  --color-grey-50:  hsl(220, 38%, 97%);   
+
+  /* Blue — primary brand color */
+  --color-blue-950: hsl(214, 24%, 23%);   /* Darkest — deep navy */
+  --color-blue-900: hsl(216, 25%, 25%);   /* Dark navy */
+  --color-blue-850: hsl(215, 27%, 32%);   /* Dark navy variant */
+  --color-blue-500: hsl(223, 100%, 59%);  /* Primary action / links */
+  --color-blue-300: hsl(216, 47%, 78%);   /* Subtle accent */
+  --color-blue-100: hsl(220, 50%, 95%);   /* Light tint */
+  --color-blue-50:  hsl(225, 100%, 96%);  /* Lightest tint */
+
+  /* Green — success / positive states */
+  --color-green-500: hsl(151, 68%, 52%);  /* Success indicator */
+  --color-green-100: hsl(151, 88%, 94%);  /* Success background */
+
+  /* Purple — highlight / special states */
+  --color-purple-600: hsl(277, 91%, 56%); /* Purple accent */
+  --color-purple-100: hsl(278, 100%, 95%);/* Purple background tint */
+
+  /* Orange — warning states */
+  --color-orange-400: hsl(22, 100%, 60%); /* Warning indicator */
+  --color-orange-50:  hsl(27, 100%, 96%); /* Warning background */
+
+  /* Red — error / destructive states */
+  --color-red-500: hsl(0, 82%, 63%);      /* Error indicator */
+
+
+  /* ─────────────────────────────────────────────────
+     TYPOGRAPHY
+  ───────────────────────────────────────────────── */
+
+  /* Font Family */
+  --font-rubik: 'Rubik', sans-serif;      /* Primary typeface */
+
+  /* Font Weights */
+  --font-weight-light:   300;
+  --font-weight-regular: 400;
+  --font-weight-medium:  500;
+
+  /* Font Sizes — Desktop */
+  --font-size-preset-1: 9rem;             /* 144px — Hero / Display */
+  --font-size-preset-2: 4rem;             /*  64px — H1 */
+  --font-size-preset-3: 2.25rem;          /*  36px — H2 */
+  --font-size-preset-4: 1.75rem;          /*  28px — H3 */
+  --font-size-preset-5: 1.5rem;           /*  24px — H4 / Large body */
+  --font-size-preset-6: 1.25rem;          /*  20px — H5 / Small heading */
+
+  /* Font Sizes — Mobile */
+  --font-size-preset-1-mobile: 5.5rem;    /*  88px — Hero / Display */
+  --font-size-preset-2-mobile: 2.5rem;    /*  40px — H1 */
+  --font-size-preset-3-mobile: 1.25rem;   /*  20px — H2 */
+  --font-size-preset-4-mobile: 1.125rem;  /*  18px — H3 */
+  --font-size-preset-5-mobile: 0.875rem;  /*  14px — H4 / Small */
+
+  /* Line Heights */
+  --line-height-tight:  1;                /* 100% — Large display text */
+  --line-height-snug:   1.2;              /* 120% — Headings */
+  --line-height-normal: 1.5;              /* 150% — Body text */
+
+  /* Letter Spacing */
+  --letter-spacing-default: 0px;          /* No tracking adjustment */
+
+
+  /* ─────────────────────────────────────────────────
+     SPACING
+     Based on an 8px base unit (0.5rem)
+     Usage: padding, margin, gap
+  ───────────────────────────────────────────────── */
+
+  --spacing-100:  0.5rem;                 /*   8px — xs  */
+  --spacing-200:  1rem;                   /*  16px — sm  */
+  --spacing-300:  1.5rem;                 /*  24px — md  */
+  --spacing-400:  2rem;                   /*  32px — lg  */
+  --spacing-500:  2.5rem;                 /*  40px — xl  */
+  --spacing-600:  3rem;                   /*  48px — 2xl */
+  --spacing-800:  4rem;                   /*  64px — 3xl */
+  --spacing-1600: 8rem;                   /* 128px — 4xl */
+  --spacing-1800: 9rem;                   /* 144px — 5xl */
+  --spacing-2300: 11.5rem;               /* 184px — 6xl */
+
 }
 
 /* 1. Use a more-intuitive box-sizing model */
