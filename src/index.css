@@ -90,6 +90,38 @@
   --spacing-1800: 9rem;                   /* 144px — 5xl */
   --spacing-2300: 11.5rem;               /* 184px — 6xl */
 
+
+  /* Backgrounds — Semantic layer */
+  --color-bg-base:    var(--color-grey-50);    /* App / page shell */
+  --color-bg-surface: var(--color-white);      /* Cards, answer options, navbar */
+  --color-bg-subtle:  var(--color-blue-50);    /* Decorative blobs */
+
+  /* Backgrounds — Interactive / Brand */
+  --color-bg-primary: var(--color-purple-600);
+
+  /* Backgrounds — Answer feedback states */
+  --color-bg-answer-correct: var(--color-green-100);
+  --color-bg-answer-wrong:   var(--color-red-100);
+
+  /* Text */
+  --color-text-base:    var(--color-blue-900);  /* Main text */
+  --color-text-strong:  var(--color-blue-950);  /* Heavier emphasis, if needed */
+  --color-text-muted:   var(--color-grey-500);  /* Secondary / de-emphasized */
+  
+}
+
+/* ─────────────────────────────────────────────────
+   SEMANTIC LAYER — Dark (overrides only)
+───────────────────────────────────────────────── */
+
+:root.dark {
+  /* Semantic backgrounds (map primitives to roles) */
+  --color-bg-base : var(--color-blue-900);
+  --color-bg-surface: var(--color-blue-850); 
+
+  /* Text */
+  --color-text-base:    var(--color-white);  /* Main text */
+  --color-text-strong:  var(--color-white);  /* Heavier emphasis, if needed */
 }
 
 /* 1. Use a more-intuitive box-sizing model */
